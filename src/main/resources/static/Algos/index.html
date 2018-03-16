@@ -1,106 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Algo</title>
+  <title>Sorting Algos</title>
 
-    <!-- Core CSS -->
-    <link rel="stylesheet" type="text/css" href="algo.css">
-    <!-- Bootstrap -->
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Custom styles for this template -->
+  <link href="css/3-col-portfolio.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Wiki Algo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Algos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Logout</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a id="home" href="/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Home</a>
+    <!-- <script>
+      $(document).ready(function(){
+          $("#home").on('click',function(e){
+            console.log('click');
+            $('body').load('text.txt');
+          });
+      });
+    </script> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
 
-    <!-- Page Content -->
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-lg-3">
-          <h1 class="my-4">Algo Name</h1>
-
-        </div>
-        <!-- /.col-lg-3 -->
-
-        <div class="col-lg-9">
-
-          <div class="card mt-4">
-            <img class="card-img-top img-fluid" src="http://placehold.it/900x400" alt="">
-            <div class="card-body">
-              <h3 class="card-title">About</h3>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
-
-            </div>
-          </div>
-          <!-- /.card -->
-
-          <div class="card card-outline-secondary my-4">
-            <div class="card-header">
-              <h3>Statistics</h3>
-            </div>
-            <div class="card-body">
-              <h5>Explanation</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
-
-              <hr>
-
-              <h5>Speed</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
-
-              <hr>
-
-
-              <a href="#" class="btn btn-success">Upload Code Space</a>
-            </div>
-          </div>
-          <!-- /.card -->
-
-        </div>
-        <!-- /.col-lg-9 -->
-
-      </div>
-
+        <li class="nav-item">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+      </ul>
     </div>
-    <!-- /.container -->
+  </div>
+</nav>
 
-    <!-- Footer -->
+<!-- Page Content -->
+<div class="container">
 
-      <!-- /.container -->
-    </footer>
+  <!-- Page Heading -->
+  <h2 class="my-4">Algos
+    </h1>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img src="bubblesort.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <a id="algo1" href="/Algos/Algo1/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Bubble Sort</a>
+            </h4>
+            <!-- <script>
+              $(document).ready(function(){
+                  $("#algo1").on('click',function(e){
+                    console.log('click');
+                    $('body').load('text.txt');
+                  });
+              });
+            </script> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img src="countingsort.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <a id="algo2" href="/Algos/Algo2/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Counting Sort</a>
+            </h4>
+            <!-- <script>
+              $(document).ready(function(){
+                  $("#algo2").on('click',function(e){
+                    console.log('click');
+                    $('body').load('text.txt');
+                  });
+              });
+            </script> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img src="selectionsort.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <a id="algo3" href="/Algos/Algo3/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Selection Sort</a>
+            </h4>
+            <!-- <script>
+              $(document).ready(function(){
+                  $("#algo3").on('click',function(e){
+                    console.log('click');
+                    $('body').load('text.txt');
+                  });
+              });
+            </script> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img src="insertionsort.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <a id="algo4" href="/Algos/Algo4/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Insertion Sort</a>
+            </h4>
+            <!-- <script>
+              $(document).ready(function(){
+                  $("#algo4").on('click',function(e){
+                    console.log('click');
+                    $('body').load('text.txt');
+                  });
+              });
+            </script> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img src="mergesort.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <a id="algo5" href="/Algos/Algo5/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Merge Sort</a>
+            </h4>
+            <!-- <script>
+              $(document).ready(function(){
+                  $("#algo5").on('click',function(e){
+                    console.log('click');
+                    $('body').load('text.txt');
+                  });
+              });
+            </script> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img src="quicksort.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <a id="algo6" href="/Algos/Algo6/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Quick Sort</a>
+            </h4>
+            <!-- <script>
+              $(document).ready(function(){
+                  $("#algo6").on('click',function(e){
+                    console.log('click');
+                    $('body').load('text.txt');
+                  });
+              });
+            </script> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <img src="radixsort.jpg" alt="">
+        <div class="card-body">
+          <h4 class="card-title">
+            <a id="algo7" href="/Algos/Algo7/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Radix Sort</a>
+          </h4>
+          <!-- <script>
+            $(document).ready(function(){
+                $("#algo7").on('click',function(e){
+                  console.log('click');
+                  $('body').load('text.txt');
+                });
+            });
+          </script> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <img src="combsort.jpg" alt="">
+        <div class="card-body">
+          <h4 class="card-title">
+            <a id="algo8" href="/Algos/Algo8/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Comb Sort</a>
+          </h4>
+          <!-- <script>
+            $(document).ready(function(){
+                $("#algo8").on('click',function(e){
+                  console.log('click');
+                  $('body').load('text.txt');
+                });
+            });
+          </script> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <img src="heapsort.jpg" alt="">
+        <div class="card-body">
+          <h4 class="card-title">
+            <a id="algo9" href="/Algos/Algo9/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Heap Sort</a>
+          </h4>
+          <!-- <script>
+            $(document).ready(function(){
+                $("#algo9").on('click',function(e){
+                  console.log('click');
+                  $('body').load('text.txt');
+                });
+            });
+          </script> -->
+        </div>
+      </div>
+    </div>
 
-  </body>
+    <!-- /.row -->
+
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">3</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+
+</div>
+<!-- /.container -->
+
+
+<!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+
+    $.ajaxSetup({
+        beforeSend: function (xhr, settings) {
+            if (settings.type == 'POST' || settings.type == 'PUT'
+                || settings.type == 'DELETE') {
+                if (!(/^http:.*/.test(settings.url) || /^https:.*/
+                        .test(settings.url))) {
+                    // Only send the token to relative URLs i.e. locally.
+                    xhr.setRequestHeader("X-XSRF-TOKEN", Cookies
+                        .get('XSRF-TOKEN'))
+                }
+            }
+        }});
+
+    $.get('/user', function () {
+        $('#login').hide();
+        $('#logout').show();
+    })
+
+    var logout = function () {
+        $.post('/logout', function () {
+            $('#login').show();
+            $('#logout').hide();
+        })
+    }
+</script>
+</body>
 
 </html>
