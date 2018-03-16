@@ -95,8 +95,35 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
 
+        $.ajaxSetup({
+            beforeSend: function (xhr, settings) {
+                if (settings.type == 'POST' || settings.type == 'PUT'
+                    || settings.type == 'DELETE') {
+                    if (!(/^http:.*/.test(settings.url) || /^https:.*/
+                            .test(settings.url))) {
+                        // Only send the token to relative URLs i.e. locally.
+                        xhr.setRequestHeader("X-XSRF-TOKEN", Cookies
+                            .get('XSRF-TOKEN'))
+                    }
+                }
+            }});
+
+        $.get('/user', function () {
+            $('#login').hide();
+            $('#logout').show();
+        })
+
+        var logout = function () {
+            $.post('/logout', function () {
+                $('#login').show();
+                $('#logout').hide();
+            })
+        }
+    </script>
   </body>
 
 </html>
