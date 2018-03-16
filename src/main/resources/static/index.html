@@ -1,69 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Demo</title>
-    <meta name="description" content=""/>
-    <meta name="viewport" content="width=device-width"/>
-    <base href="/"/>
-    <!--<link rel="stylesheet" type="text/css"
-          href="/webjars/bootstrap/css/bootstrap.min.css"/>
-    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
-    <script type="text/javascript"
-            src="/webjars/bootstrap/js/bootstrap.min.js"></script>-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link href="demo.css" rel="stylesheet" type="text/css" >
-</head>
-<!--<body>
-    <h1>Login</h1>
-    <div class="container unauthenticated">
-        <div>
-            With Facebook: <a href="/login/facebook">click here</a>
-        </div>
-        <div>
-            With Github: <a href="/login/github">click here</a>
-        </div>
-    </div>
-    <div class="container authenticated" style="display: none">
-        Logged in as: <span id="user"></span>
-        <div>
-            <button onClick="logout()" class="btn btn-primary">Logout</button>
-        </div>
-    </div>
-    <script type="text/javascript" src="/webjars/js-cookie/js.cookie.js"></script>
-    <script type="text/javascript">
-          $.ajaxSetup({
-            beforeSend : function(xhr, settings) {
-              if (settings.type == 'POST' || settings.type == 'PUT'
-                  || settings.type == 'DELETE') {
-                if (!(/^http:.*/.test(settings.url) || /^https:.*/
-                    .test(settings.url))) {
-                  // Only send the token to relative URLs i.e. locally.
-                  xhr.setRequestHeader("X-XSRF-TOKEN", Cookies
-                      .get('XSRF-TOKEN'));
-                }
-              }
-            }
-          });
-          $.get("/user", function(data) {
-            $("#user").html(data.userAuthentication.details.name);
-            $(".unauthenticated").hide();
-            $(".authenticated").show();
-          });
-          var logout = function() {
-            $.post("/logout", function() {
-              $("#user").html('');
-              $(".unauthenticated").show();
-              $(".authenticated").hide();
-            })
-            return true;
-          }
-        </script>
-</body>-->
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Algos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body>
 <body>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
