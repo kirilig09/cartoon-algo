@@ -1,59 +1,89 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Demo</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width" />
-    <base href="/" />
-    <link rel="stylesheet" type="text/css"
-          href="/webjars/bootstrap/css/bootstrap.min.css" />
-    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
-    <script type="text/javascript"
-            src="/webjars/bootstrap/js/bootstrap.min.js"></script>
-</head>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Algos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body>
 <body>
-<h1>Login</h1>
-<div class="container unauthenticated">
-    With Facebook: <a href="/login">click here</a>
-</div>
-<div class="container authenticated" style="display: none">
-    Logged in as: <span id="user"></span>
-    <div>
-        <button onClick="logout()" class="btn btn-primary">Logout</button>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Wiki Algo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a id="algos" href="./startbootstrap-3-col-portfolio-gh-pages/index.html" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Algos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log in</a>
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
-<script type="text/javascript"
-        src="/webjars/js-cookie/js.cookie.js"></script>
-<script type="text/javascript">
-    $
-        .ajaxSetup({
-            beforeSend : function(xhr, settings) {
-                if (settings.type == 'POST' || settings.type == 'PUT'
-                    || settings.type == 'DELETE') {
-                    if (!(/^http:.*/.test(settings.url) || /^https:.*/
-                            .test(settings.url))) {
-                        // Only send the token to relative URLs i.e. locally.
-                        xhr.setRequestHeader("X-XSRF-TOKEN",
-                            Cookies.get('XSRF-TOKEN'));
-                    }
-                }
-            }
-        });
-    $.get("/user", function(data) {
-        $("#user").html(data.userAuthentication.details.name);
-        $(".unauthenticated").hide();
-        $(".authenticated").show();
-    });
-    var logout = function() {
-        $.post("/logout", function() {
-            $("#user").html('');
-            $(".unauthenticated").show();
-            $(".authenticated").hide();
-        })
-        return true;
-    }
-</script>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+
+
+
+    <!-- Portfolio Item Heading -->
+    <h1 class="my-4">
+
+    </h1>
+
+    <!-- Portfolio Item Row -->
+    <div class="row">
+
+      <div class="col-md-8">
+        <img class="img-fluid" src="http://placehold.it/800x500" alt="">
+      </div>
+
+      <div class="col-md-4">
+        <h3 class="my-3">What we do</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+        <h3 class="my-3">Ranking</h3>
+        <ul>
+          <li>Майка ти</li>
+          <li>Леля ти</li>
+          <li>Стринка ти</li>
+          <li>Баба ти</li>
+        </ul>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
