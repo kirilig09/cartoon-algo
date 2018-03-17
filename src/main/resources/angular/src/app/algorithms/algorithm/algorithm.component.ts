@@ -42,10 +42,16 @@ export class AlgorithmComponent implements OnInit,OnDestroy {
     the sorted list, shifts all the larger values up to make a space, and inserts into that correct position.`,
     speed:`The speed is adaptive, which means the time complexity is O(N * K), where each element is at most K places away from its
     sorted position. It is useful in lists with little amount of elements, but it could also be very helpful in arrays which are
-    almost sorted`},
+    almost sorted.`},
 
-    {name: 'Comb Sort',video:'https://www.youtube.com/embed/n51GFZHXlYY',expl:`Comb sort is an in-place sort algorithm that repeatedly reorders different pairs of items. On each pass swap pairs of items separated
-     by the increment or gap, if needed, and reduce the gap.`,speed: 'over 9000'}
+    {name: 'Comb Sort',video:'https://www.youtube.com/embed/n51GFZHXlYY',expl:`Comb sort is a relatively simple sorting algorithm which was the first algorithm designed to have cases where
+    the speed is O(N * logN). The basic idea is to eliminate turtles, or small values near the end of the list, since in a
+    bubble sort these slow the sorting down tremendously. It is an upgraded version of bubble sort. The way it works is that
+    it has a big gap (Bubble sort gap is always 1) and shrinks it everytime by 1.3. The shrink constant was found best,
+    because it was tested more than 200,000 times. It works the same way bubble sort works, by comparing and swapping the
+    elements in the array.`,speed: 'The overall speed is O(N ^ 2 / 2 ^ P), where P is the number of increments. It is usually faster than bubble sort,
+    insertion sort and selection sort. The best case is O(N * logN), where the list is already sorted. In its worst is O(N ^ 2)
+    where the list is reverse sorted.'}
 
     {name:'Quick Sort',video:'https://www.youtube.com/embed/PgBzjlCcFvc',expl:`Quicksort (sometimes called partition-exchange sort) is an efficient sorting algorithm, one of the best,
     serving as a systematic method for sorting elements in an array. It is one of the most common used algorithm in the whole
