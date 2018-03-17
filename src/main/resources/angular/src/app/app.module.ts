@@ -7,7 +7,7 @@ import {Route, RouterModule} from "@angular/router";
 import { HomePageComponent } from './home-page/home-page.component';
 import { AlgorithmsComponent } from './algorithms/algorithms.component';
 import { AlgorithmComponent } from './algorithms/algorithm/algorithm.component';
-
+import {HttpClientModule} from "@angular/common/http";
 const routes:Route[] = [
   {path:'',component:HomePageComponent},
   {path:'algos',component:AlgorithmsComponent},
@@ -25,9 +25,11 @@ const routes:Route[] = [
     BrowserModule,
     RouterModule.forRoot(routes,{
       enableTracing:true
-    })
+    }),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

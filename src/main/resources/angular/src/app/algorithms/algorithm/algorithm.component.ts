@@ -24,8 +24,10 @@ export class AlgorithmComponent implements OnInit,OnDestroy {
 
   id;
   algorithm;
-
-  constructor(private route: ActivatedRoute,private sanitizer: DomSanitizer) { }
+  sanitizer:DomSanitizer;
+  constructor(private route: ActivatedRoute, sanitizer: DomSanitizer) {
+    this.sanitizer = sanitizer;
+  }
 
   ngOnInit() {
     this.sub = this.route.params.subscribe(params => {

@@ -12,7 +12,8 @@
           <a routerLink="/algos" class="nav-link">Algos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Log In</a>
+          <a *ngIf="!loggedIn" class="nav-link" href="/login">Log In</a>
+          <a *ngIf="loggedIn" class="nav-link" (click)="logout()">Log Out</a>
         </li>
       </ul>
     </div>
