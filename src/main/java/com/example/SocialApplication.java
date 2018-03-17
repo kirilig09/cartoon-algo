@@ -40,8 +40,7 @@ public class SocialApplication extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		// @formatter:off
 		http.antMatcher("/**").authorizeRequests().antMatchers("/user**","/login**")
-				.authenticated().anyRequest().permitAll().and().logout().logoutSuccessUrl("/").permitAll().and().csrf()
-				.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
+				.authenticated().anyRequest().permitAll().and().logout().logoutSuccessUrl("/").permitAll().and().csrf().disable();
 		// @formatter:on
 	}
 

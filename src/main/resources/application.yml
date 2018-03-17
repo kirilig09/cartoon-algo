@@ -8,7 +8,17 @@ security:
       clientAuthenticationScheme: form
     resource:
       userInfoUri: https://api.github.com/user
+  enable-csrf: true
 
 logging:
   level:
     org.springframework.security: DEBUG
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:file:~/test
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
