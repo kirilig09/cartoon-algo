@@ -45,7 +45,7 @@ export class AlgorithmComponent implements OnInit,OnDestroy {
     almost sorted`},
 
     {name: 'Comb Sort',video:'https://www.youtube.com/embed/n51GFZHXlYY',expl:`Comb sort is an in-place sort algorithm that repeatedly reorders different pairs of items. On each pass swap pairs of items separated
-     by the increment or gap, if needed, and reduce the gap.`,speed: 'over 9000'}
+     by the increment or gap, if needed, and reduce the gap.`,speed: 'over 9000'},
 
     {name:'Quick Sort',video:'https://www.youtube.com/embed/PgBzjlCcFvc',expl:`Quicksort (sometimes called partition-exchange sort) is an efficient sorting algorithm, one of the best,
     serving as a systematic method for sorting elements in an array. It is one of the most common used algorithm in the whole
