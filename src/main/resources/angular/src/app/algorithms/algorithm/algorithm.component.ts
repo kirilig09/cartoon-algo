@@ -12,6 +12,22 @@ export class AlgorithmComponent implements OnInit,OnDestroy {
 
   private sub: any;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   id;
   algorithm:any;
   sanitizer:DomSanitizer;
