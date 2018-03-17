@@ -23,6 +23,6 @@ public class AlgorithmServiceImpl implements AlgorithmService{
 
     @Override
     public Algorithm findById(long id) {
-        return algorithmRepository.findOne(id);
+        return algorithmRepository.findById(id);
     }
 }

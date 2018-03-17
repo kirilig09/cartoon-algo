@@ -9,23 +9,26 @@ public class Algorithm {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    private String name;
+    private String algo_name;
+    @Column(columnDefinition="varchar2(255)")
     private String speed;
+    @Column(columnDefinition="varchar2(255)")
     private String complexity;
     private String video;
-    private String image;
-    private String description;
+    private String algo_image;
+    @Column(columnDefinition="varchar2(800)")
+    private String algo_desc;
 
     public Algorithm() {
     }
 
-    public Algorithm(String name, String description, String speed, String complexity, String video, String image) {
-        this.name = name;
-        this.description = description;
+    public Algorithm(String algo_name, String speed, String complexity, String video, String algo_image, String algo_desc) {
+        this.algo_name = algo_name;
         this.speed = speed;
         this.complexity = complexity;
         this.video = video;
-        this.image = image;
+        this.algo_image = algo_image;
+        this.algo_desc = algo_desc;
     }
 
     public long getId() {
@@ -36,20 +39,12 @@ public class Algorithm {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getAlgo_name() {
+        return algo_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
+    public void setAlgo_name(String algo_name) {
+        this.algo_name = algo_name;
     }
 
     public String getSpeed() {
@@ -60,6 +55,14 @@ public class Algorithm {
         this.speed = speed;
     }
 
+    public String getComplexity() {
+        return complexity;
+    }
+
+    public void setComplexity(String complexity) {
+        this.complexity = complexity;
+    }
+
     public String getVideo() {
         return video;
     }
@@ -68,19 +71,19 @@ public class Algorithm {
         this.video = video;
     }
 
-    public String getImage() {
-        return image;
+    public String getAlgo_image() {
+        return algo_image;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setAlgo_image(String algo_image) {
+        this.algo_image = algo_image;
     }
 
-    public String getComplexity() {
-        return complexity;
+    public String getAlgo_desc() {
+        return algo_desc;
     }
 
-    public void setComplexity(String complexity) {
-        this.complexity = complexity;
+    public void setAlgo_desc(String algo_desc) {
+        this.algo_desc = algo_desc;
     }
 }

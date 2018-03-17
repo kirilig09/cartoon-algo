@@ -27,7 +27,7 @@ module.exports = ""
 /***/ "./src/app/algorithms/algorithm/algorithm.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-lg-3\">\n      <h1 class=\"my-4\">{{algorithm.name}}</h1>\n    </div>\n    <div class=\"col-lg-9\">\n      <div class=\"card mt-4\">\n        <iframe width=\"820\" height=\"400\" [src]=\"sanitizer.bypassSecurityTrustResourceUrl(algorithm.video)\" frameborder=\"0\"\n                allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\n      </div>\n      <div class=\"card card-outline-secondary my-4\">\n        <div class=\"card-header\">\n          <h3>Statistics</h3>\n        </div>\n        <div class=\"card-body\">\n          <h5>Explanation</h5>\n          <p>{{algorithm.expl}}</p>\n          <hr>\n          <h5>Speed</h5>\n          <p>{{algorithm.speed}}</p>\n          <hr>\n          <a routerLink=\"/algos/solve/{{id}}\" class=\"btn btn-success\">Upload Code Space</a>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-lg-3\">\n      <h1 class=\"my-4\">{{algorithm.algo_name}}</h1>\n    </div>\n    <div class=\"col-lg-9\">\n      <div class=\"card mt-4\">\n        <iframe width=\"820\" height=\"400\" [src]=\"sanitizer.bypassSecurityTrustResourceUrl(algorithm.video)\" frameborder=\"0\"\n                allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>\n      </div>\n      <div class=\"card card-outline-secondary my-4\">\n        <div class=\"card-header\">\n          <h3>Statistics</h3>\n        </div>\n        <div class=\"card-body\">\n          <h5>Explanation</h5>\n          <p>{{algorithm.algo_desc}}</p>\n          <hr>\n          <h5>Speed</h5>\n          <p>{{algorithm.speed}}</p>\n          <hr>\n          <a routerLink=\"/algos/solve/{{id}}\" class=\"btn btn-success\">Upload Code Space</a>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -97,7 +97,7 @@ module.exports = ""
 /***/ "./src/app/algorithms/algorithms.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"container\">\n  <h2 class=\"my-4\">Algos\n  </h2>\n  <div class=\"row\">\n    <div class=\"col-lg-4 col-sm-6 portfolio-item my-3\" *ngFor=\"let algo of algos\">\n      <div class=\"card h-100\">\n        <img [src]=\"algo.image\" alt=\"\">\n        <div class=\"card-body\">\n          <h4 class=\"card-title\">\n            <a routerLink=\"/algos/{{algo.id}}\" class=\"btn btn-primary btn-lg active\" role=\"button\" aria-disabled=\"true\">{{algo.name}}</a>\n          </h4>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!--Pagination-->\n<ul class=\"pagination justify-content-center\">\n  <li class=\"page-item\">\n    <a class=\"page-link\" href=\"#\" aria-label=\"Previous\">\n      <span aria-hidden=\"true\">&laquo;</span>\n      <span class=\"sr-only\">Previous</span>\n    </a>\n  </li>\n  <li class=\"page-item\">\n    <a class=\"page-link\" (click)=\"changePage(1)\">1</a>\n  </li>\n  <li class=\"page-item\">\n    <a class=\"page-link\" href=\"#\" aria-label=\"Next\">\n      <span aria-hidden=\"true\">&raquo;</span>\n      <span class=\"sr-only\">Next</span>\n    </a>\n  </li>\n</ul>\n"
+module.exports = "\n<div class=\"container\">\n  <h2 class=\"my-4\">Algos\n  </h2>\n  <div class=\"row\">\n    <div class=\"col-lg-4 col-sm-6 portfolio-item my-3\" *ngFor=\"let algo of algos\">\n      <div class=\"card h-100\">\n        <img [src]=\"algo.algo_image\" alt=\"\">\n        <div class=\"card-body\">\n          <h4 class=\"card-title\">\n            <a routerLink=\"/algos/{{algo.id}}\" class=\"btn btn-primary btn-lg active\" role=\"button\" aria-disabled=\"true\">{{algo.algo_name}}</a>\n          </h4>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!--Pagination-->\n<ul class=\"pagination justify-content-center\">\n  <li class=\"page-item\">\n    <a class=\"page-link\" href=\"#\" aria-label=\"Previous\">\n      <span aria-hidden=\"true\">&laquo;</span>\n      <span class=\"sr-only\">Previous</span>\n    </a>\n  </li>\n  <li class=\"page-item\">\n    <a class=\"page-link\" (click)=\"changePage(0)\">1</a>\n  </li>\n  <li class=\"page-item\">\n    <a class=\"page-link\" href=\"#\" aria-label=\"Next\">\n      <span aria-hidden=\"true\">&raquo;</span>\n      <span class=\"sr-only\">Next</span>\n    </a>\n  </li>\n</ul>\n"
 
 /***/ }),
 
@@ -123,17 +123,19 @@ var AlgorithmsComponent = /** @class */ (function () {
     function AlgorithmsComponent(http) {
         this.http = http;
     }
-    AlgorithmsComponent.prototype.ngOnInit = function () {
+    AlgorithmsComponent.prototype.ngAfterViewInit = function () {
         var _this = this;
         this.http.get("/api/algos?page=0&size=6").subscribe(function (data) {
+            console.log(data);
             _this.algos = data.content;
-        }).unsubscribe();
+        });
     };
     AlgorithmsComponent.prototype.changePage = function (page) {
         var _this = this;
         this.http.get("/api/algos?page=" + page + "&size=6").subscribe(function (data) {
+            console.log(data);
             _this.algos = data.content;
-        }).unsubscribe();
+        });
     };
     AlgorithmsComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -350,7 +352,7 @@ module.exports = ""
 /***/ "./src/app/solve/solve.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<form>\n  <div class=\"form-group\">\n    <!--<label for=\"exampleFormControlSelect1\">Example select</label>-->\n    <select class=\"form-control\" #lang>\n      <option>1</option>\n      <option>2</option>\n      <option>3</option>\n      <option>4</option>\n      <option>5</option>\n    </select>\n  </div>\n  <div class=\"form-group\">\n    <label>Write your code</label>\n    <textarea class=\"form-control\" cols=\"40\" #code></textarea>\n  </div>\n  <button type=\"submit\" class=\"btn btn-primary\" (click)=\"send()\">Submit</button>\n</form>\n"
+module.exports = "<form>\n  <div class=\"form-group\">\n    <!--<label for=\"exampleFormControlSelect1\">Example select</label>-->\n    <select class=\"form-control\" #lang>\n      <option>1</option>\n      <option>2</option>\n      <option>3</option>\n      <option>4</option>\n      <option>5</option>\n    </select>\n  </div>\n  <div class=\"form-group\">\n    <label>Write your code</label>\n    <textarea class=\"form-control\" cols=\"40\" #code></textarea>\n  </div>\n  <button class=\"btn btn-primary\" (click)=\"send()\">Submit</button>\n</form>\n"
 
 /***/ }),
 
@@ -386,7 +388,7 @@ var SolveComponent = /** @class */ (function () {
         });
     };
     SolveComponent.prototype.send = function () {
-        this.http.put("/api/judge/" + this.id, { code: this.code.nativeElement.value, lang: this.lang.nativeElement.value });
+        this.http.post("/api/judge", { source_code: this.code.nativeElement.value, language_id: this.lang.nativeElement.value });
     };
     SolveComponent.prototype.ngOnDestroy = function () {
         this.sub.unsubscribe();

@@ -28,7 +28,7 @@ export class SolveComponent implements OnInit,OnDestroy {
   }
 
   send(){
-    this.http.put(`/api/judge/${this.id}`,{code:this.code.nativeElement.value,lang:this.lang.nativeElement.value})
+    this.http.post(`/api/judge`,{source_code:this.code.nativeElement.value,language_id:this.lang.nativeElement.value})
   }
 
   ngOnDestroy(): void {

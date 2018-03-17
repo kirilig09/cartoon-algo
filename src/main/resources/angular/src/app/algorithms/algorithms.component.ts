@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 @Component({
@@ -6,7 +6,7 @@ import {HttpClient} from "@angular/common/http";
   templateUrl: './algorithms.component.html',
   styleUrls: ['./algorithms.component.css']
 })
-export class AlgorithmsComponent implements OnInit {
+export class AlgorithmsComponent implements AfterViewInit{
 
   //TODO: add http
 /*
@@ -23,17 +23,20 @@ export class AlgorithmsComponent implements OnInit {
 */
   algos:any;
   constructor(private http:HttpClient) { }
-
-  ngOnInit() {
+  ngAfterViewInit(): void {
     this.http.get(`/api/algos?page=0&size=6`).subscribe((data:any)=>{
+      console.log(data);
       this.algos=data.content;
-    }).unsubscribe()
+    })
   }
+
+
 
   changePage(page){
     this.http.get(`/api/algos?page=${page}&size=6`).subscribe((data:any)=>{
+      console.log(data);
       this.algos=data.content;
-    }).unsubscribe()
+    })
   }
 
 }

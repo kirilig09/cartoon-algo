@@ -6,6 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AlgorithmRepository  extends PagingAndSortingRepository<Algorithm,Long>{
-    @Override
-    Algorithm findOne(Long aLong);
+    Algorithm findById(Long id);
 }
