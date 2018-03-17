@@ -1,23 +1,30 @@
-Wiki Algo
-=======
+#Wiki Algo
+------------
+
+![logo](https://cdn.discordapp.com/attachments/424087635410026519/424498180126801920/logo_gucci.png)
 
 <br/>
 
-Intuative self-developing, teach orientated website about algorithms for beginners and experts.
+
+-Intuative self-developing, teach orientated website about algorithms for beginners and experts.
 -------------------------------------------------------
 
 <br/>
 
-##*About us:*
----------------
+#About us:
+------------
+
+ ![Wiki Algo ](https://cdn.discordapp.com/attachments/424087635410026519/424505081472352256/unknown.png).
 
 <br/>
 
-###**Wiki Algo** is full satck web application focused on teaching about different algorithms and their use.
+
+
+##**Wiki Algo*** is full satck web application focused on teaching about different algorithms and their use.*
 
 <br/>
 
-##Functions
+#Functions:
 --------------
 You can do the following:
 
@@ -29,7 +36,7 @@ You can do the following:
 
 
 
-##*Reasons to choose Wiki Algo:*
+##Reasons to choose Wiki Algo:
 -------------------------------------
 
 1. Efficiency
@@ -42,9 +49,14 @@ You can do the following:
 
 <br/>
 
-##*Find us at [Wiki Algo](file:///C:/Users/Ivo/cartoon-algo/src/main/resources/static/index.html).*
+##Find us at [Wiki Algo](file:///C:/Users/Ivo/cartoon-algo/src/main/resources/static/index.html).
 
+<br/>
 
+###*Resourses: Geeks for Geeks ; Wikipedia ; VisuAlgo ; CSAcademy ; 
 
+<br/>
+
+###*Creators: Simeon Georgiev, Metodi Pandurov, Kiril Georgiev , Ivaylo Bankov*
 
   
