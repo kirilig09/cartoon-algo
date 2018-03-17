@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-algorithms',
@@ -7,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlgorithmsComponent implements OnInit {
 
+  //TODO: add http
+/*
   algos = [
     {name:'Bubble Sort',img:'/assets/bubblesort.jpg'},
     {name:'Counting Sort',img:'/assets/countingsort.jpg'},
@@ -17,10 +20,20 @@ export class AlgorithmsComponent implements OnInit {
     {name:'Radix Sort',img:'/assets/radixsort.jpg'},
     {name:'Heap Sort',img:'/assets/heapsort.jpg'}
   ]
-
-  constructor() { }
+*/
+  algos:any;
+  constructor(private http:HttpClient) { }
 
   ngOnInit() {
+    this.http.get(`/api/algos?page=0&size=6`).subscribe((data:any)=>{
+      this.algos=data.content;
+    }).unsubscribe()
+  }
+
+  changePage(page){
+    this.http.get(`/api/algos?page=${page}&size=6`).subscribe((data:any)=>{
+      this.algos=data.content;
+    }).unsubscribe()
   }
 
 }

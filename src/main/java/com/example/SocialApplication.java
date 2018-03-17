@@ -39,9 +39,8 @@ public class SocialApplication extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		// @formatter:off
-		http.antMatcher("/**").authorizeRequests().antMatchers("/user**","/login**")
-				.authenticated().anyRequest().permitAll().and().logout().logoutSuccessUrl("/").permitAll().and().csrf()
-				.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse());
+		http.antMatcher("/**").authorizeRequests().antMatchers("/user**","/login**","/judge**")
+				.authenticated().anyRequest().permitAll().and().logout().logoutSuccessUrl("/").permitAll().and().csrf().disable();
 		// @formatter:on
 	}
 

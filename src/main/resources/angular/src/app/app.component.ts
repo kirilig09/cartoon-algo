@@ -6,7 +6,12 @@ import {HttpClient} from "@angular/common/http";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+  ngOnInit(): void {
+    this.http.get('/user').subscribe(data=>{
+      this.loggedIn=true;
+    })
+  }
 
   title = 'app';
   constructor(private http:HttpClient){
