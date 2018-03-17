@@ -85,7 +85,7 @@ export class AlgorithmComponent implements OnInit,OnDestroy {
     speed:`The speed is always O(N * logN), relating to merge sort and quick sort, because of how it always does a fixed amount of
     operations for any array, no matter the size of the elements. Heap sort compares really well to quick sort, because quick
     sort has a worst case of O(N ^ 2) which is unacceptable for large data sets and can be deliberately triggered given enough
-    knowledge of the implementation, creating a security risk. Unlike merge sort, quick sort and heap sort aren't stable sorts.`}
+    knowledge of the implementation, creating a security risk. Unlike merge sort, quick sort and heap sort aren't stable sorts.`},
 
     {name:'Merge Sort',video:'https://www.youtube.com/embed/JSceec-wEyw',expl:`Merge sort was the first sort of its kind to have a constant speed, despite any characteristic of the array.
     This was one of the first divide and conquer algorithms to rule the programming industry, because of its speed. The
