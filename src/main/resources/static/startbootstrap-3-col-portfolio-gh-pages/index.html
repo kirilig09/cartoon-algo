@@ -8,10 +8,10 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Algos</title>
+    <title>Sorting Algos</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/3-col-portfolio.css" rel="stylesheet">
@@ -23,7 +23,15 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Wiki Algo</a>
+        <a id="home" href="/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Home</a>
+        <!-- <script>
+          $(document).ready(function(){
+              $("#home").on('click',function(e){
+                console.log('click');
+                $('body').load('text.txt');
+              });
+          });
+        </script> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,71 +56,168 @@
       <div class="row">
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <img src="bubblesort.jpg" alt="">
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project One</a>
+                <a id="algo1" href="/Algos/Algo%201/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Bubble Sort</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+              <!-- <script>
+                $(document).ready(function(){
+                    $("#algo1").on('click',function(e){
+                      console.log('click');
+                      $('body').load('text.txt');
+                    });
+                });
+              </script> -->
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <img src="countingsort.jpg" alt="">
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Two</a>
+                <a id="algo2" href="/Algos/Algo%202/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Counting Sort</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              <!-- <script>
+                $(document).ready(function(){
+                    $("#algo2").on('click',function(e){
+                      console.log('click');
+                      $('body').load('text.txt');
+                    });
+                });
+              </script> -->
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <img src="selectionsort.jpg" alt="">
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Three</a>
+                <a id="algo3" href="/Algos/Algo%203/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Selection Sort</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
+              <!-- <script>
+                $(document).ready(function(){
+                    $("#algo3").on('click',function(e){
+                      console.log('click');
+                      $('body').load('text.txt');
+                    });
+                });
+              </script> -->
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <img src="insertionsort.jpg" alt="">
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Four</a>
+                <a id="algo4" href="/Algos/Algo%204/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Insertion Sort</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              <!-- <script>
+                $(document).ready(function(){
+                    $("#algo4").on('click',function(e){
+                      console.log('click');
+                      $('body').load('text.txt');
+                    });
+                });
+              </script> -->
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <img src="mergesort.jpg" alt="">
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Five</a>
+                <a id="algo5" href="/Algos/Algo%205/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Merge Sort</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+              <!-- <script>
+                $(document).ready(function(){
+                    $("#algo5").on('click',function(e){
+                      console.log('click');
+                      $('body').load('text.txt');
+                    });
+                });
+              </script> -->
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+            <img src="quicksort.jpg" alt="">
             <div class="card-body">
               <h4 class="card-title">
-                <a href="#">Project Six</a>
+                <a id="algo6" href="/Algos/Algo%206/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Quick Sort</a>
               </h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
+              <!-- <script>
+                $(document).ready(function(){
+                    $("#algo6").on('click',function(e){
+                      console.log('click');
+                      $('body').load('text.txt');
+                    });
+                });
+              </script> -->
             </div>
           </div>
         </div>
       </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img src="radixsort.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <a id="algo7" href="/Algos/Algo%207/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Radix Sort</a>
+            </h4>
+            <!-- <script>
+              $(document).ready(function(){
+                  $("#algo7").on('click',function(e){
+                    console.log('click');
+                    $('body').load('text.txt');
+                  });
+              });
+            </script> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img src="combsort.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <a id="algo8" href="/Algos/Algo%208/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Comb Sort</a>
+            </h4>
+            <!-- <script>
+              $(document).ready(function(){
+                  $("#algo8").on('click',function(e){
+                    console.log('click');
+                    $('body').load('text.txt');
+                  });
+              });
+            </script> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <img src="heapsort.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">
+              <a id="algo9" href="/Algos/Algo%209/" class="btn btn-primary btn-lg active" role="button" aria-disabled="true">Heap Sort</a>
+            </h4>
+            <!-- <script>
+              $(document).ready(function(){
+                  $("#algo9").on('click',function(e){
+                    console.log('click');
+                    $('body').load('text.txt');
+                  });
+              });
+            </script> -->
+          </div>
+        </div>
+      </div>
+
       <!-- /.row -->
 
       <!-- Pagination -->
@@ -143,13 +248,13 @@
     </div>
     <!-- /.container -->
 
-  
+
       <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 

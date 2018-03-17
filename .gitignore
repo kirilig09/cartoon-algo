@@ -1,0 +1,46 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+src/main/resources/angular/dist
+src/main/resources/angular/dist-server
+src/main/resources/angular/tmp
+src/main/resources/angular/out-tsc
+
+# dependencies
+src/main/resources/angular/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# e2e
+src/main/resources/angular/e2e/*.js
+src/main/resources/angular/e2e/*.map
+
+target/*
+
+# System Files
+src/main/resources/angular.DS_Store
+src/main/resources/angularThumbs.db
