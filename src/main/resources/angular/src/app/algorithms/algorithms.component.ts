@@ -15,8 +15,11 @@ export class AlgorithmsComponent implements OnInit {
     {name:'Merge Sort',img:'/assets/mergesort.jpg'},
     {name:'Quick Sort',img:'/assets/quicksort.jpg'},
     {name:'Radix Sort',img:'/assets/radixsort.jpg'},
-    {name:'Heap Sort',img:'/assets/heapsort.jpg'}
-    {name:'Comb Sort',img:'/assets/combsort.jpg'}
+    {name:'Heap Sort',img:'/assets/heapsort.jpg'},
+    {name:'Comb Sort',img:'/assets/combsort.jpg'},
+    {name:'Breadth First Search',img:'/assets/breadth-firstsearch.png'},
+    {name:'Depth First Search',img:'/assets/depth-firstsearch.png'},
+    {name:'Dijkstra Shortest Path',img:'assets/dijkstra-shortestpath.jpg'}
   ]
 
   constructor() { }
