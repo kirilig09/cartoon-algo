@@ -16,6 +16,7 @@ export class AlgorithmsComponent implements OnInit {
     {name:'Quick Sort',img:'/assets/quicksort.jpg'},
     {name:'Radix Sort',img:'/assets/radixsort.jpg'},
     {name:'Heap Sort',img:'/assets/heapsort.jpg'}
+    {name:'Comb Sort',img:'/assets/combsort.jpg'}
   ]
 
   constructor() { }
