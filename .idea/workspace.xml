@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0b88266-0703-45e1-8a88-1e8756a2806c" name="Default" comment="Added log-in and log-out for other pages">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/AlgorithmController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/models/Algorithm.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/repositories/AlgorithmRepository.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/services/AlgorithmService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/example/services/AlgorithmServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/angular/src/app/solve/solve.component.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/angular/src/app/solve/solve.component.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/angular/src/app/solve/solve.component.spec.ts" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/angular/src/app/solve/solve.component.ts" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/social-github.iml" afterPath="$PROJECT_DIR$/social-github.iml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Judge.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/SocialApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/SocialApplication.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular/src/app/algorithms/algorithm/algorithm.component.ts" afterPath="$PROJECT_DIR$/src/main/resources/angular/src/app/algorithms/algorithm/algorithm.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular/src/app/algorithms/algorithms.component.html" afterPath="$PROJECT_DIR$/src/main/resources/angular/src/app/algorithms/algorithms.component.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular/src/app/algorithms/algorithms.component.ts" afterPath="$PROJECT_DIR$/src/main/resources/angular/src/app/algorithms/algorithms.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular/src/app/app.component.ts" afterPath="$PROJECT_DIR$/src/main/resources/angular/src/app/app.component.ts" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/angular/src/app/app.module.ts" afterPath="$PROJECT_DIR$/src/main/resources/angular/src/app/app.module.ts" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/3rdpartylicenses.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/inline.318b50c57b4eba3d437b.bundle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/main.4b6881b87e56b17f9317.bundle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/polyfills.bf95165a1d5098766b92.bundle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts.eb98ec82455f694e1239.bundle.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles.a6ddfbc54d527092f692.bundle.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/ClientApplication.java" afterPath="$PROJECT_DIR$/src/test/java/com/example/ClientApplication.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/SocialApplicationTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/example/SocialApplicationTests.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/controllers/AlgorithmController.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/controllers/AlgorithmController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,11 +44,13 @@
       <file leaf-file-name="AlgorithmController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controllers/AlgorithmController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="255">
+              <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
               <folding>
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#874#875#0" expanded="true" />
+                <element signature="e#677#678#0" expanded="true" />
+                <element signature="e#729#730#0" expanded="true" />
+                <element signature="e#790#791#0" expanded="true" />
+                <element signature="e#848#849#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,9 +59,12 @@
       <file leaf-file-name="SocialApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/SocialApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="315">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="e#1854#1855#0" expanded="true" />
+                <element signature="e#1913#1914#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -220,12 +197,12 @@
         <option value="$PROJECT_DIR$/src/main/java/bg/undergraduates/SocialApplication.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/angular/src/app/algorithms/algorithms.component.ts" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/controllers/AlgorithmController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/angular/src/app/solve/solve.component.ts" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/SocialApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/controllers/Judge.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/controllers/JudgeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/controllers/AlgorithmController.java" />
       </list>
     </option>
   </component>
@@ -526,12 +503,12 @@
       <workItem from="1521215852463" duration="2097000" />
       <workItem from="1521226511752" duration="5442000" />
       <workItem from="1521270099570" duration="26390000" />
-      <workItem from="1521303466069" duration="3493000" />
+      <workItem from="1521303466069" duration="4727000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40449000" />
+    <option name="totallyTimeSpent" value="41683000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -544,7 +521,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
@@ -564,9 +540,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21928461" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21928461" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -644,7 +620,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#1854#1855#0" expanded="true" />
+            <element signature="e#1913#1914#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -659,7 +638,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="41" column="69" lean-forward="false" selection-start-line="41" selection-start-column="69" selection-end-line="41" selection-end-column="69" />
-          <folding />
+          <folding>
+            <element signature="e#1854#1855#0" expanded="true" />
+            <element signature="e#1913#1914#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -881,14 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/SocialApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="43" column="8" lean-forward="false" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/com/example/controllers/Judge.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -921,13 +895,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/SocialApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#1854#1855#0" expanded="true" />
+            <element signature="e#1913#1914#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/controllers/AlgorithmController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="255">
+          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
           <folding>
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
           </folding>
         </state>
       </provider>
